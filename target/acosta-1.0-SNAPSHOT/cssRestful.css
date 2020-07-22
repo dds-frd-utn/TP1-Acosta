@@ -1,0 +1,24 @@
+h1{
+	font-family: Georgia;
+	font-size: 2em;
+}
+
+h2{
+	font-size:em;
+}
+
+#encabezado {
+	display : block;
+	margin: 50px;
+	padding:15px;
+	border-radius : 3px 3px 3px 3px;
+    border: 2px solid black;	
+}
+
+#contenido {
+	margin: 50px;
+}
+
+#linkejemplo {
+	margin: 20px;
+}

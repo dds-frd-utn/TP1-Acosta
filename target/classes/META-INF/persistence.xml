@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <!-- Define Persistence Unit -->
+  <persistence-unit name="my_persistence_unit" transaction-type="JTA">
+    <jta-data-source>jbdc/ddsacosta</jta-data-source>
+    <class>utn.frd.acosta.entity.Clientes</class>
+    <class>utn.frd.acosta.entity.Cuentas</class>
+    <class>utn.frd.acosta.entity.Transacciones</class>
+    <class>utn.frd.acosta.entity.Bonos</class>
+    <class>utn.frd.acosta.entity.Inversiones</class>
+  </persistence-unit>
+</persistence>

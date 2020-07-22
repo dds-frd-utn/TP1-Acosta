@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servicio RESTFUL</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link href="cssRestful.css" rel="stylesheet"/>
+    </head>
+    
+	<body>
+		
+		<div id="encabezado">
+		<h1>Bienvenido al servicio Restful del Banco ...  </h1>
+		<p>Hemos desarrollado este servicio en el que podrá realizar consultas sobre:</p>
+		<p></p>
+		<ul>
+			<li>Clientes</li>
+			<li>Cuentas</li>
+			<li>Transacciones</li>
+			<li>Inversiones</li>
+		</ul>
+		</div>
+		
+		<div id="contenido">
+		<h3>Consulta de Clientes</h3>
+		<p>Para consultar el listado de todos los clientes, 
+			ingrese a <a href="http://localhost:8080/acosta/rest/cliente"> http://localhost:8080/acosta/rest/cliente</a></p>
+		<p>Ademas puede consultar sobre un cliente en particular, agregando al final de la URL el id que lo identifica, de la siguiente manera:</p>
+		<div id="linkejemplo"><p> http://localhost:8080/acosta/rest/cliente/<b>{idCliente}</b> </p></div>
+		</div>
+		
+		<div id="contenido">
+		<h3>Consulta de Cuentas</h3>
+		<p>Cada día mas clientes se suman a nuestro banco y abren sus respectivas cuentas,
+			puede consultarlas ingresando <a href="http://localhost:8080/acosta/rest/cuenta">http://localhost:8080/acosta/rest/cuenta</a></p>
+		
+		<p>Si desea hacer consultas sobre:</p>
+		<ul>
+			<li><em><b>Una cuenta en particular:</b></em> 
+				debe añadir el id de la cuenta de la siguiente manera - http://localhost:8080/acosta/rest/cuenta/<b>{idCuenta}</b></li>
+			<br>
+			<li><em><b>Las cuentas asociadas a un cliente:</b></em>
+				debe identificar el id del mismo de la siguiente manera - http://localhost:8080/acosta/rest/cuenta/<b>titular/{idCliente}</b></li>
+		</ul>
+		</div>
+		
+		<div id="contenido">
+		<h3>Consulta de Transacciones</h3>
+		<p>Puede consultar las últimas transacciones realizadas ingresando a,
+			<a href="http://localhost:8080/acosta/rest/transaccion">http://localhost:8080/acosta/rest/transaccion</a></p>
+		
+		<p>Si desea hacer consultas sobre:</p>
+		<ul>
+			<li><em><b>Una determinada transacción:</b></em> 
+				debe añadir el id de la transaccion de la siguiente manera - http://localhost:8080/acosta/rest/transaccion/<b>{idTransaccion}</b></li>
+			<br>
+			<li><em><b>Las transacciones emitidas por una determinada cuenta:</b></em>
+				debe identificar el id de la cuenta emisora de la siguiente manera - http://localhost:8080/acosta/rest/transaccion/<b>emisor/{idCuenta}</b></li>
+			<br>
+			<li><em><b>Las transacciones recibidas por una determinada cuenta:</b></em>
+				debe identificar el id de la cuenta receptora de la siguiente manera - http://localhost:8080/acosta/rest/transaccion/<b>receptor/{idCuenta}</b></li>
+		</ul>
+		</div>
+		
+		<div id="contenido">
+		<h3>Consulta de Bonos</h3>
+		<p>Puede consultar los bonos disponibles ingresando a: 
+			<a href="http://localhost:8080/acosta/rest/bonos">http://localhost:8080/acosta/rest/bonos</a></p>
+			
+		<p>Ademas puede consultar sobre un bono en particular, agregando al final de la URL el id que lo identifica, de la siguiente manera:</p>
+			<div id="linkejemplo"><p> http://localhost:8080/acosta/rest/bonos/<b>{idBono}</b> </p></div>
+			</div>
+		</div>
+		
+
+		<div id="contenido">
+		<h3>Consulta de Inversiones</h3>
+		<p>Puede consultar las últimas inversiones realizadas por nuestros clientes ingresando a,
+			<a href="http://localhost:8080/acosta/rest/inversiones">http://localhost:8080/acosta/rest/inversiones</a></p>
+		
+		<p>Si desea hacer consultas sobre:</p>
+		<ul>
+			<li><em><b>Una determinada inversion:</b></em> 
+				debe añadir el id de la inversion de la siguiente manera - http://localhost:8080/acosta/rest/inversiones/<b>{idInversion}</b></li>
+			<br>
+			<li><em><b>Las inversiones realizadas por una determinada cuenta:</b></em>
+				debe identificar el id de la cuenta de la siguiente manera - http://localhost:8080/acosta/rest/inversiones/<b>cuenta/{idCuenta}</b></li>
+			<br>
+			<li><em><b>Las inversiones realizadas sobre un determinado bono:</b></em>
+				debe identificar el id del bono de la siguiente manera - http://localhost:8080/acosta/rest/inversiones/<b>bono/{idBono}</b></li>
+		</ul>
+		</div>
+    </body>
+</html>
