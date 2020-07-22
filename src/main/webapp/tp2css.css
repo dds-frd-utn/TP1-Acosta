@@ -1,0 +1,77 @@
+button {
+	font-size: 20px;
+	width: 250px;
+	padding: 12px 28px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 30px;
+	text-align: center;
+}
+
+fieldset {
+	border : none;
+}
+
+#interfaz {
+	display : block;
+	text-align : center;
+	width: 700px;
+	height: 400px;
+	background-color : #AABCEB;
+	padding: 50px;
+	border-radius : 3px 3px 3px 3px;
+    border: 2px solid black;	
+}
+
+#interfaz2 {
+	display : block;
+	text-align : center;
+	width: 700px;
+	height: 400px;
+	background-color : #AABCEB;
+	padding: 50px;
+	border-radius : 3px 3px 3px 3px;
+    border: 2px solid black;	
+}
+
+#contenido {
+	align: 0 auto;
+	display : block;
+	text-align : center;
+	height: 100px;
+	background-color : #AABCEB;
+	padding: 20px;
+}
+
+#consulta {
+	font-size: 20px;
+	text-align: center;
+}
+
+#campoExtraccion {
+	display : block;
+	height : 5px;
+}
+
+#campoTransferencia {
+	display : block;
+	height : 5px;
+}
+
+#campoMovimientos {
+	display : block;
+	height : 5px;
+}
+
+input {
+	width: 100px;
+	height: 30px;
+	background-color: #F0F8FF;
+}
+
+
+
